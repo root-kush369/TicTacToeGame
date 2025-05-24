@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+}
+
+.outercontainer
+{
+    display: grid;
+    background-color: red;
+    border: 2px solid black;
+    height: 560px;
+    /* width: 500px; */
+    gap: 10px;
+    
+
+
+    /* gtr gtc grid rows and col creation */
+    /* grid-template-rows: 30px 100px 100px 100px 100px 30px;
+    grid-template-columns: 200px 200px; */
+
+    /* same thing of giving area grid rows and cols by grid template area concept area=row*col l*b
+
+    grid-template-areas: 
+        "top top"
+        "mid mid"
+        "mid mid"
+        "midd midd"
+        "midd midd"
+        "bottom bottom"; */
+
+        grid-template-rows: 100px 100px ;
+        grid-template-columns: 100px 100px ;
+
+
+    /* parent grid ko place krne ko jo child grid ke bhaar h  */
+    justify-content: center;
+    align-content: center;
+
+
+
+
+    /* /......................................................................................./ */
+
+    /* child grid all at once along horizonatalMainAxis and verticalCross axis */
+    
+    
+    /* justify-items: center; */
+    /* align-items: end; */
+    /* works for all child all at once */
+    /* place-items: center; {combination of justifyitems and alignitems of parent} */
+
+    /* /......................................................................................./ */
+
+    /* place-items: center;  does same job as place self*/
+
+    /*IMP do samething to place griditems
+  
+    [place items --> align items center +justify content center written in parent grid] === [place self --> justifyself center + alignself center written in child grid] */
+    /* place-items: center; */
+}
+
+.innercontainer
+{
+    /* display: ; */
+    background-color: greenyellow;
+    border: 2px solid black;
+    height: 80px;
+    width: 50px;
+    place-self: center;
+    /* place-self: center;*/ /* itspoint@1x */
+    /* [place items --> align items center +justify content center written in parent grid] === [place self --> justifyself center + alignself center written in child grid] */ */
+    /* place-items: center; *
+    
+
+
+}
+#A{
+
+    /* self properties works in child grid placeself is combination of {justifyself[mainaxis horizontal] + alignself{along vertical/crossAXIS} works in
+    child grid all at once too above at @1x*/
+    /* justify-self: center; */
+    /* align-self: center; */
+    /* place-self: center;  */
+
+    /* order: 1; */
+
+    /* colspan  */
+    /* grid-column-start: 1; */
+    /* grid-column-end: 3; */
+
+    /* rowspan */
+    /* grid-row-start: 1; */
+    /* grid-row-end: 2; */
+
+    /* grid-area: top; */
+}
+
+#B
+{
+    /* order: 3; */
+    /* grid-column-start: 1;
+    grid-column-end: 3; */
+
+    /* rowspan */
+    /* grid-row-start: 2;
+    grid-row-end: 3; */
+    /* grid-area: mid; */
+
+}
+#C{
+    /* order:2; */
+
+    /* grid-column-start: 1;
+    grid-column-end: 3; */
+
+    /* rowspan */
+    /* grid-row-start: 3;
+    grid-row-end: 4; */
+    /* grid-area: midd; */
+}
+
+#D
+{
+    /* grid-column-start: 1;
+    grid-column-end: 3; */
+
+    /* rowspan */
+    /* grid-row-start: 4;
+    grid-row-end: 5; */
+    /* grid-area: bottom; */
+}
