@@ -4,22 +4,15 @@
     box-sizing: border-box;
     font-family: sans-serif;
 }
-/* background-image: url(); */
 
 
 
-/*1) top level weapper grid keeya so topplayerdetails innerdiv and newgametext sb mid m aaske 
-than useke andr ek or grid leeya tictactoe waala  */
-/* 2 gridcontatinertictaetoe ke childitesmsgrid ko flex b bnaa deeya to placeits content allthewaycenter*/
 .wrapper
 {
     height: 100vh;
     width: 100vw;
   
     background-image: url("gradient-bg.jpg");
-    /* background-color: black; */
-    /* background-image: radial-gradient( red 900px, blue 10px,green 2px); */
-    /* background-image: linear-gradient(rgb(254, 89, 89), rgb(222, 82, 222), rgb(77, 69, 69)); */
     display: grid;
     place-items: center;
     grid-gap: 30px;
@@ -27,14 +20,12 @@ than useke andr ek or grid leeya tictactoe waala  */
 .gridParentdivtictactoe
 {
 
-    /* height: 10%; */
     max-width: 90%;
   
     
     display: grid;
     grid-gap: 1px;
 
-    /* background-color: rgba(255,255,255,0.15); */
     background-color: rgba(255,255,255,0.12);
   
     backdrop-filter: blur(9px);
@@ -103,8 +94,6 @@ than useke andr ek or grid leeya tictactoe waala  */
     font-size: 19px;
     height: 40px;
     width: 2px;
-    /* color: aqua; */
-    /* background-color: none; */
     background-color: rgba(255,255,255,0.12);
     border: 1px solid rgba(255,255,255,0.22);
     width: 140px;
@@ -124,17 +113,14 @@ than useke andr ek or grid leeya tictactoe waala  */
     width: 120px;
     color: white;
     background-color: rgba(255,255,255,0.12);
-    /* text-align: center; */
-    display: flex; /*i can make it flex to place written text in center row and col wise i.e main and cross axis ke along*/
+    display: flex;
     justify-content: center;
     align-items: center;
 
     border-radius: 1rem;
     font-size: 24px;
     width: 300px;
-    /* filter:back; */
     backdrop-filter:blur(1px);
-    /* filter: drop-shadow(2px 1px 31px red); */
 }
 
 .wincolor
@@ -157,9 +143,7 @@ than useke andr ek or grid leeya tictactoe waala  */
 {
     .wrapper{
         
-        /* background-image: linear-gradient(to right, #c4f5d4 0%, #98fbe9 100%); */
         background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
-        /* background-image: url(""); */
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -237,7 +221,6 @@ than useke andr ek or grid leeya tictactoe waala  */
     width: 130px;
     color: rgb(106, 103, 103);
     background-color: rgba(92, 78, 78, 0.12);
-    /* text-align: center; */
     font-size: 17px;
    
 }
@@ -249,10 +232,12 @@ than useke andr ek or grid leeya tictactoe waala  */
     width: 190px;
     color: rgb(106, 103, 103);
     background-color: rgba(92, 78, 78, 0.12);
-    /* text-align: center; */
     font-size: 19px;
  
 
 }
 
+
+
 }
+
